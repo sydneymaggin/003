@@ -1,0 +1,111 @@
+@font-face{
+    font-family: 'Dela Gothic One', cursive;
+}
+
+@font-face{
+    font-family: 'Syne', sans-serif;
+}
+
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color:white;
+    background-color: #0404c9;
+    text-align: center;
+}
+
+.header{
+    font-family: 'Syne', sans-serif;
+    margin:2rem;
+    font-size: 4rem;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin:0;
+    
+    
+}
+
+img{
+    border-radius: 50%;
+    
+}
+
+
+  .song-container{
+      padding: 1rem;
+      /* border: 1px solid black; */
+      border-radius: 25%;
+      display: inline-block;
+      /* margin-left: 40%; */
+      /* display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 1fr; */
+  }
+
+
+  
+  .song-cover {
+    width: 5rem;
+    height: auto;
+    display: block;
+
+  }
+
+  .song-artist{
+    display: none;
+}
+.song-artist.active{
+    display: block;
+}
+
+.song-title{
+    display: none;
+}
+.song-title.active{
+    display: block;
+}
+
+  .song-rating{
+      display: none;
+  }
+  .song-rating.active{
+      display: block;
+  }
+
+  .song-album{
+      display: none;
+  }
+  .song-album.active{
+    display: block;
+}
+
+.filter{
+    padding: 2rem;
+    display: flex;
+    overflow: scroll;
+}
+
+span{
+    font-weight: 600;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(181,250,78,1) 1%, rgba(255,255,255,1) 82%);
+    width: 100%;
+    margin: auto;
+    margin-left: 1rem;
+    padding: 4rem;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2rem;
+
+    
+}
