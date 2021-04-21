@@ -81,6 +81,7 @@ function showSongs() {
      //add title to our song container
       var songTitle = document.createElement("h1");
       songTitle.classList.add("song-title");
+
       songTitle.innerText = song.fields.title;
       songContainer.append(songTitle);
 
@@ -100,21 +101,38 @@ function showSongs() {
 
 
             //add rating to our song container
-            var songRating = document.createElement("h1");
-            songRating.classList.add("song-rating");
-            songRating.innerText = song.fields.rating;
-            songContainer.append(songRating);
+
+            // var songRating = document.createElement("h1");
+            // songRating.classList.add("song-rating");
+            // songRating.innerText = song.fields.rating;
+            // songContainer.append(songRating);
 
 
 
 
+
+
+
+var songCircle = document.createElement("div");
+songCircle.classList.add("circle-container");
+document.querySelector(".song-container").append(songCircle);
+
+
+
+
+
+
+
+
+
+            
 
       //add event listener
       //when user clicks on song container
       //image and rating will appear or disappear
       songContainer.addEventListener("click", function(){
-      songRating.classList.toggle("active");
-      songCover.classList.toggle("active");
+      // songRating.classList.toggle("active");
+      songCover.classList.toggle("inactive");
       songAlbum.classList.toggle("active");
       songArtist.classList.toggle("active");
       songTitle.classList.toggle("active");
@@ -140,7 +158,7 @@ function showSongs() {
       filterBedtime.addEventListener("click", function(){
 
         if (songContainer.classList.contains("bedtime")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -153,7 +171,7 @@ function showSongs() {
       filterCoding.addEventListener("click", function(){
 
         if (songContainer.classList.contains("coding")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -165,7 +183,7 @@ function showSongs() {
       filterCommuting.addEventListener("click", function(){
 
         if (songContainer.classList.contains("commuting")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -177,7 +195,7 @@ function showSongs() {
       filterEating.addEventListener("click", function(){
 
         if (songContainer.classList.contains("eating")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -190,7 +208,7 @@ function showSongs() {
       filterExercising.addEventListener("click", function(){
 
         if (songContainer.classList.contains("exercising")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -202,7 +220,7 @@ function showSongs() {
       filterPainting.addEventListener("click", function(){
 
         if (songContainer.classList.contains("painting")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -214,7 +232,7 @@ function showSongs() {
       filterPartying.addEventListener("click", function(){
 
         if (songContainer.classList.contains("partying")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -226,7 +244,7 @@ function showSongs() {
       filterReading.addEventListener("click", function(){
 
         if (songContainer.classList.contains("reading")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -241,7 +259,7 @@ function showSongs() {
       filterReflecting.addEventListener("click", function(){
 
         if (songContainer.classList.contains("reflecting")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -253,7 +271,7 @@ function showSongs() {
       filterRelaxing.addEventListener("click", function(){
 
         if (songContainer.classList.contains("relaxing")){
-          songContainer.style.display = "block";
+          songContainer.style.display = "inline-block";
         } else {
           songContainer.style.display = "none";
         }    
@@ -265,25 +283,16 @@ function showSongs() {
 
 
 
-
-
-
-
-
-
-
-
-
-
       var filterReset = document.querySelector(".js-reset")
       filterReset.addEventListener("click", function(){
         songContainer.style.display = "block";
       })
 
 
+        
 
 
+      })
 
-    });
-  }
 
+}

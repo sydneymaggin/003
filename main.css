@@ -1,21 +1,15 @@
 @font-face{
-    font-family: 'Dela Gothic One', cursive;
-}
+    font-family: 'Montserrat', sans-serif;}
 
 @font-face{
-    font-family: 'Syne', sans-serif;
-}
-
-@font-face{
-    font-family: 'Montserrat', sans-serif;
-}
+    font-family: 'Syne', sans-serif;}
 
 
 
 body {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:white;
     background-color: #0404c9;
     text-align: center;
@@ -25,11 +19,12 @@ body {
     font-family: 'Syne', sans-serif;
     margin:2rem;
     font-size: 4rem;
+    padding-top: 2rem;
 }
 
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     margin:0;
     
     
@@ -42,9 +37,11 @@ img{
 
 
   .song-container{
-      padding: 1rem;
-      /* border: 1px solid black; */
-      border-radius: 25%;
+      width: 15rem;
+      height: 15rem;
+      margin: 1rem;
+      /* border: 3px solid white; */
+      border-radius: 50%;
       display: inline-block;
       /* margin-left: 40%; */
       /* display: grid;
@@ -53,19 +50,47 @@ img{
   }
 
 
+
+  
+
+
+
+
   
   .song-cover {
-    width: 5rem;
+    width: 15rem;
     height: auto;
     display: block;
+    position: relative;
+    top: 7rem;
+    border: none;
+    
 
   }
+
+ 
+
+   .song-cover.inactive{
+    width: 15rem;
+    height: auto;
+    display: none;
+
+  } 
+
+
+
+  .circle-container{
+      margin:-12px;
+  }
+    
+
 
   .song-artist{
     display: none;
 }
 .song-artist.active{
     display: block;
+  
 }
 
 .song-title{
@@ -75,12 +100,12 @@ img{
     display: block;
 }
 
-  .song-rating{
+  /* .song-rating{
       display: none;
   }
   .song-rating.active{
       display: block;
-  }
+  } */
 
   .song-album{
       display: none;
@@ -92,20 +117,17 @@ img{
 .filter{
     padding: 2rem;
     display: flex;
-    overflow: scroll;
+
 }
 
 span{
     font-weight: 600;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(181,250,78,1) 1%, rgba(255,255,255,1) 82%);
-    width: 100%;
     margin: auto;
     margin-left: 1rem;
-    padding: 4rem;
+    padding: .5rem;
     justify-content: center;
     flex-direction: row;
-    font-size: 2rem;
-
     
 }
+
+
